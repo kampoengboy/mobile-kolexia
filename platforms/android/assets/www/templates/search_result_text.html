@@ -1,0 +1,19 @@
+<ion-view view-title="Search Result">
+  <ion-content class="padding">
+    Search Results for :
+    <h4>{{q}}</h4>
+        <div class="card-2" ng-repeat="item in list">
+          <div class="card" ng-click="openbrowser(item.r_link)">
+            <div class="row card-outer">
+              <div class="col card-content">
+                <h4 class="card-title">{{item['r_link/_text']}}</h4>
+                <div class="card-description-outer">
+                  <p class="card-description">{{item.st_description}}</p>
+                  <p class="card-description" style="font-size:9px; color:#330099">{{item.r_link}}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </ion-content>
+</ion-view>

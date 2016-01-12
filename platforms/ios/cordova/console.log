@@ -1,0 +1,218 @@
+2016-01-08 23:20:39.970 kolexia-mobile-app[16305:410024] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Data/Application/E8DB73B1-4638-4981-B0A8-B2B4098CB936/Library/Cookies/com.ionicframework.kolexiamobileapp900437.binarycookies
+2016-01-08 23:20:40.437 kolexia-mobile-app[16305:410024] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-08 23:20:40.438 kolexia-mobile-app[16305:410024] Multi-tasking -> Device: YES, App: YES
+2016-01-08 23:20:40.470 kolexia-mobile-app[16305:410024] Unlimited access to network resources
+2016-01-08 23:20:41.405 kolexia-mobile-app[16305:410024] [CDVTimer][splashscreen] 485.914052ms
+2016-01-08 23:20:41.416 kolexia-mobile-app[16305:410024] [CDVTimer][statusbar] 11.047006ms
+2016-01-08 23:20:41.417 kolexia-mobile-app[16305:410024] [CDVTimer][keyboard] 0.639021ms
+2016-01-08 23:20:41.417 kolexia-mobile-app[16305:410024] [CDVTimer][TotalPluginStartup] 498.386025ms
+2016-01-08 23:20:41.558 kolexia-mobile-app[16305:410024] Resetting plugins due to page load.
+2016-01-08 23:20:42.140 kolexia-mobile-app[16305:410024] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/7D4CC7E5-B59C-4A31-A1A9-D53C9EE8C7F7/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-08 23:22:34.585 kolexia-mobile-app[16516:412110] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Data/Application/CDBCFFE2-76CC-4E07-8F00-7F20FF04CDCA/Library/Cookies/com.ionicframework.kolexiamobileapp900437.binarycookies
+2016-01-08 23:22:34.675 kolexia-mobile-app[16516:412110] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-08 23:22:34.675 kolexia-mobile-app[16516:412110] Multi-tasking -> Device: YES, App: YES
+2016-01-08 23:22:34.677 kolexia-mobile-app[16516:412110] Unlimited access to network resources
+2016-01-08 23:22:34.873 kolexia-mobile-app[16516:412110] [CDVTimer][splashscreen] 146.481991ms
+2016-01-08 23:22:34.882 kolexia-mobile-app[16516:412110] [CDVTimer][statusbar] 7.943034ms
+2016-01-08 23:22:34.882 kolexia-mobile-app[16516:412110] [CDVTimer][keyboard] 0.182986ms
+2016-01-08 23:22:34.882 kolexia-mobile-app[16516:412110] [CDVTimer][TotalPluginStartup] 155.345976ms
+2016-01-08 23:22:34.938 kolexia-mobile-app[16516:412110] Resetting plugins due to page load.
+2016-01-08 23:22:35.204 kolexia-mobile-app[16516:412110] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/571EB8D2-3794-4DFF-879E-CE47CDEF640A/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-08 23:22:37.654 kolexia-mobile-app[16516:412110] THREAD WARNING: ['ImagePicker'] took '67.494873' ms. Plugin should use a background thread.
+2016-01-08 23:23:15.393 kolexia-mobile-app[16691:413182] DiskCookieStorage changing policy from 2 to 0, cookie file: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Data/Application/82680EEA-7D4C-420B-8378-F83A1ADCB423/Library/Cookies/com.ionicframework.kolexiamobileapp900437.binarycookies
+2016-01-08 23:23:15.478 kolexia-mobile-app[16691:413182] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-08 23:23:15.478 kolexia-mobile-app[16691:413182] Multi-tasking -> Device: YES, App: YES
+2016-01-08 23:23:15.480 kolexia-mobile-app[16691:413182] Unlimited access to network resources
+2016-01-08 23:23:15.632 kolexia-mobile-app[16691:413182] [CDVTimer][splashscreen] 111.673951ms
+2016-01-08 23:23:15.641 kolexia-mobile-app[16691:413182] [CDVTimer][statusbar] 9.188950ms
+2016-01-08 23:23:15.641 kolexia-mobile-app[16691:413182] [CDVTimer][keyboard] 0.189960ms
+2016-01-08 23:23:15.642 kolexia-mobile-app[16691:413182] [CDVTimer][TotalPluginStartup] 121.742964ms
+2016-01-08 23:23:15.706 kolexia-mobile-app[16691:413182] Resetting plugins due to page load.
+2016-01-08 23:23:16.029 kolexia-mobile-app[16691:413182] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/1D3C872C-36E5-473A-8F8E-69916736E8D9/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-08 23:32:19.542 kolexia-mobile-app[16862:416321] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-08 23:32:19.544 kolexia-mobile-app[16862:416321] Multi-tasking -> Device: YES, App: YES
+2016-01-08 23:32:19.546 kolexia-mobile-app[16862:416321] Unlimited access to network resources
+2016-01-08 23:32:19.850 kolexia-mobile-app[16862:416321] [CDVTimer][splashscreen] 244.884968ms
+2016-01-08 23:32:19.858 kolexia-mobile-app[16862:416321] [CDVTimer][statusbar] 8.175015ms
+2016-01-08 23:32:19.859 kolexia-mobile-app[16862:416321] [CDVTimer][keyboard] 0.181973ms
+2016-01-08 23:32:19.859 kolexia-mobile-app[16862:416321] [CDVTimer][TotalPluginStartup] 254.019976ms
+2016-01-08 23:32:19.923 kolexia-mobile-app[16862:416321] Resetting plugins due to page load.
+2016-01-08 23:32:20.255 kolexia-mobile-app[16862:416321] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/B8F01A69-2644-46D0-BE04-AE0207B76336/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-08 23:33:27.795 kolexia-mobile-app[17033:417389] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-08 23:33:27.796 kolexia-mobile-app[17033:417389] Multi-tasking -> Device: YES, App: YES
+2016-01-08 23:33:27.798 kolexia-mobile-app[17033:417389] Unlimited access to network resources
+2016-01-08 23:33:27.997 kolexia-mobile-app[17033:417389] [CDVTimer][splashscreen] 151.574969ms
+2016-01-08 23:33:28.006 kolexia-mobile-app[17033:417389] [CDVTimer][statusbar] 9.140015ms
+2016-01-08 23:33:28.007 kolexia-mobile-app[17033:417389] [CDVTimer][keyboard] 0.272036ms
+2016-01-08 23:33:28.007 kolexia-mobile-app[17033:417389] [CDVTimer][TotalPluginStartup] 161.678016ms
+2016-01-08 23:33:28.099 kolexia-mobile-app[17033:417389] Resetting plugins due to page load.
+2016-01-08 23:33:28.526 kolexia-mobile-app[17033:417389] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/6DA940AD-4808-40AC-B1B0-4983A5EB46B0/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-08 23:33:28.635 kolexia-mobile-app[17033:417422] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:47.810 kolexia-mobile-app[17200:418288] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-08 23:34:47.811 kolexia-mobile-app[17200:418288] Multi-tasking -> Device: YES, App: YES
+2016-01-08 23:34:47.813 kolexia-mobile-app[17200:418288] Unlimited access to network resources
+2016-01-08 23:34:47.990 kolexia-mobile-app[17200:418288] [CDVTimer][splashscreen] 128.920019ms
+2016-01-08 23:34:48.000 kolexia-mobile-app[17200:418288] [CDVTimer][statusbar] 9.205997ms
+2016-01-08 23:34:48.000 kolexia-mobile-app[17200:418288] [CDVTimer][keyboard] 0.198960ms
+2016-01-08 23:34:48.000 kolexia-mobile-app[17200:418288] [CDVTimer][TotalPluginStartup] 138.994992ms
+2016-01-08 23:34:48.059 kolexia-mobile-app[17200:418288] Resetting plugins due to page load.
+2016-01-08 23:34:48.411 kolexia-mobile-app[17200:418288] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/B455C951-CE5A-413A-9B12-1C0B2216EB28/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-08 23:34:50.403 kolexia-mobile-app[17200:418303] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:53.423 kolexia-mobile-app[17200:418288] THREAD WARNING: ['ImagePicker'] took '11.906006' ms. Plugin should use a background thread.
+2016-01-08 23:34:55.459 kolexia-mobile-app[17200:418305] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:55.702 kolexia-mobile-app[17200:418305] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:55.822 kolexia-mobile-app[17200:418320] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:55.968 kolexia-mobile-app[17200:418305] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:56.104 kolexia-mobile-app[17200:418305] Camera.getPicture: source type 1 not available.
+2016-01-08 23:34:56.233 kolexia-mobile-app[17200:418320] Camera.getPicture: source type 1 not available.
+2016-01-09 00:08:00.393 kolexia-mobile-app[17520:430247] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-09 00:08:00.397 kolexia-mobile-app[17520:430247] Multi-tasking -> Device: YES, App: YES
+2016-01-09 00:08:00.422 kolexia-mobile-app[17520:430247] Unlimited access to network resources
+2016-01-09 00:08:01.387 kolexia-mobile-app[17520:430247] [CDVTimer][splashscreen] 565.467000ms
+2016-01-09 00:08:01.400 kolexia-mobile-app[17520:430247] [CDVTimer][statusbar] 13.119996ms
+2016-01-09 00:08:01.400 kolexia-mobile-app[17520:430247] [CDVTimer][keyboard] 0.248015ms
+2016-01-09 00:08:01.401 kolexia-mobile-app[17520:430247] [CDVTimer][TotalPluginStartup] 579.586983ms
+2016-01-09 00:08:01.591 kolexia-mobile-app[17520:430247] Resetting plugins due to page load.
+2016-01-09 00:08:02.024 kolexia-mobile-app[17520:430247] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/2937AA51-6827-4BFC-80C6-436DE4CD5AD8/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-09 10:35:48.206 kolexia-mobile-app[20276:454908] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-09 10:35:48.209 kolexia-mobile-app[20276:454908] Multi-tasking -> Device: YES, App: YES
+2016-01-09 10:35:48.237 kolexia-mobile-app[20276:454908] Unlimited access to network resources
+2016-01-09 10:35:49.262 kolexia-mobile-app[20276:454908] [CDVTimer][splashscreen] 603.175998ms
+2016-01-09 10:35:49.275 kolexia-mobile-app[20276:454908] [CDVTimer][statusbar] 12.664020ms
+2016-01-09 10:35:49.275 kolexia-mobile-app[20276:454908] [CDVTimer][keyboard] 0.304043ms
+2016-01-09 10:35:49.276 kolexia-mobile-app[20276:454908] [CDVTimer][TotalPluginStartup] 617.038965ms
+2016-01-09 10:35:49.417 kolexia-mobile-app[20276:454908] Resetting plugins due to page load.
+2016-01-09 10:35:50.017 kolexia-mobile-app[20276:454908] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/2458798F-4B30-4889-B7B3-46B5EB56658F/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-09 10:52:39.338 kolexia-mobile-app[20529:461398] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-09 10:52:39.339 kolexia-mobile-app[20529:461398] Multi-tasking -> Device: YES, App: YES
+2016-01-09 10:52:39.341 kolexia-mobile-app[20529:461398] Unlimited access to network resources
+2016-01-09 10:52:39.589 kolexia-mobile-app[20529:461398] [CDVTimer][splashscreen] 192.575991ms
+2016-01-09 10:52:39.598 kolexia-mobile-app[20529:461398] [CDVTimer][statusbar] 8.656025ms
+2016-01-09 10:52:39.598 kolexia-mobile-app[20529:461398] [CDVTimer][keyboard] 0.190020ms
+2016-01-09 10:52:39.598 kolexia-mobile-app[20529:461398] [CDVTimer][TotalPluginStartup] 202.289999ms
+2016-01-09 10:52:39.657 kolexia-mobile-app[20529:461398] Resetting plugins due to page load.
+2016-01-09 10:52:40.009 kolexia-mobile-app[20529:461398] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/ACD785B7-8B80-4C04-A7BD-B171C030B1BC/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-09 11:37:35.906 kolexia-mobile-app[20767:478809] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-09 11:37:35.907 kolexia-mobile-app[20767:478809] Multi-tasking -> Device: YES, App: YES
+2016-01-09 11:37:35.909 kolexia-mobile-app[20767:478809] Unlimited access to network resources
+2016-01-09 11:37:36.304 kolexia-mobile-app[20767:478809] [CDVTimer][splashscreen] 332.772017ms
+2016-01-09 11:37:36.314 kolexia-mobile-app[20767:478809] [CDVTimer][statusbar] 9.059966ms
+2016-01-09 11:37:36.314 kolexia-mobile-app[20767:478809] [CDVTimer][keyboard] 0.193000ms
+2016-01-09 11:37:36.314 kolexia-mobile-app[20767:478809] [CDVTimer][TotalPluginStartup] 342.790008ms
+2016-01-09 11:37:36.383 kolexia-mobile-app[20767:478809] Resetting plugins due to page load.
+2016-01-09 11:37:36.734 kolexia-mobile-app[20767:478809] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/99F26565-E313-460F-A968-E4225B2CF4B4/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-09 11:37:43.230 kolexia-mobile-app[20767:478809] CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:37:43.232 kolexia-mobile-app[20767:478809] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:37:43.402 kolexia-mobile-app[20767:478809] CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:37:43.403 kolexia-mobile-app[20767:478809] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:40:10.251 kolexia-mobile-app[20767:478809] CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:40:10.253 kolexia-mobile-app[20767:478809] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:40:10.643 kolexia-mobile-app[20767:478809] CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:40:10.643 kolexia-mobile-app[20767:478809] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:40:11.028 kolexia-mobile-app[20767:478809] CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:40:11.028 kolexia-mobile-app[20767:478809] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:41:52.023 kolexia-mobile-app[20993:480746] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-09 11:41:52.024 kolexia-mobile-app[20993:480746] Multi-tasking -> Device: YES, App: YES
+2016-01-09 11:41:52.026 kolexia-mobile-app[20993:480746] Unlimited access to network resources
+2016-01-09 11:41:52.197 kolexia-mobile-app[20993:480746] [CDVTimer][splashscreen] 123.606026ms
+2016-01-09 11:41:52.206 kolexia-mobile-app[20993:480746] [CDVTimer][statusbar] 8.437037ms
+2016-01-09 11:41:52.206 kolexia-mobile-app[20993:480746] [CDVTimer][keyboard] 0.270009ms
+2016-01-09 11:41:52.206 kolexia-mobile-app[20993:480746] [CDVTimer][TotalPluginStartup] 133.243978ms
+2016-01-09 11:41:52.267 kolexia-mobile-app[20993:480746] Resetting plugins due to page load.
+2016-01-09 11:41:52.699 kolexia-mobile-app[20993:480746] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/E666EC3F-A6B9-4047-91DA-41A3906C263C/kolexia-mobile-app.app/www/index.html#/tab/dash
+2016-01-09 11:41:53.984 kolexia-mobile-app[20993:480772] Camera.getPicture: source type 1 not available.
+2016-01-09 11:41:55.382 kolexia-mobile-app[20993:480746] THREAD WARNING: ['ImagePicker'] took '67.536133' ms. Plugin should use a background thread.
+2016-01-09 11:49:26.609 kolexia-mobile-app[20993:480746] CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:49:26.610 kolexia-mobile-app[20993:480746] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-09 11:49:27.239 kolexia-mobile-app[20993:482598] Camera.getPicture: source type 1 not available.
+2016-01-10 18:04:41.699 kolexia-mobile-app[9954:187476] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-10 18:04:41.703 kolexia-mobile-app[9954:187476] Multi-tasking -> Device: YES, App: YES
+2016-01-10 18:04:41.726 kolexia-mobile-app[9954:187476] Unlimited access to network resources
+2016-01-10 18:04:42.959 kolexia-mobile-app[9954:187476] [CDVTimer][splashscreen] 689.682007ms
+2016-01-10 18:04:42.973 kolexia-mobile-app[9954:187476] [CDVTimer][statusbar] 13.230979ms
+2016-01-10 18:04:42.974 kolexia-mobile-app[9954:187476] [CDVTimer][keyboard] 0.818014ms
+2016-01-10 18:04:42.974 kolexia-mobile-app[9954:187476] [CDVTimer][TotalPluginStartup] 704.667032ms
+2016-01-10 18:04:43.108 kolexia-mobile-app[9954:187476] Resetting plugins due to page load.
+2016-01-10 18:04:43.633 kolexia-mobile-app[9954:187476] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/EC8C6EEC-965F-433E-B444-85FF9E9A2DC9/kolexia-mobile-app.app/www/index.html
+2016-01-10 18:06:02.560 kolexia-mobile-app[9954:187476] THREAD WARNING: ['ImagePicker'] took '48.566895' ms. Plugin should use a background thread.
+2016-01-10 18:09:20.321 kolexia-mobile-app[9954:187476] CDVWebViewDelegate: Navigation started when state=1
+2016-01-10 18:09:20.322 kolexia-mobile-app[9954:187476] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-10 18:09:20.899 kolexia-mobile-app[9954:187476] CDVWebViewDelegate: Navigation started when state=1
+2016-01-10 18:09:20.899 kolexia-mobile-app[9954:187476] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-10 18:09:22.842 kolexia-mobile-app[9954:187476] CDVWebViewDelegate: Navigation started when state=1
+2016-01-10 18:09:22.843 kolexia-mobile-app[9954:187476] Failed to load webpage with error: CDVWebViewDelegate: Navigation started when state=1
+2016-01-10 21:07:51.465 kolexia-mobile-app[9954:202090] Communications error: <OS_xpc_error: <error: 0x3654534> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x3654734> { length = 22, contents = "Connection interrupted" }
+}>
+2016-01-10 21:07:55.480 kolexia-mobile-app[9954:202090] Connection to assetsd was interrupted or assetsd died
+2016-01-11 10:44:00.834 kolexia-mobile-app[9954:187476] THREAD WARNING: ['ImagePicker'] took '114.000244' ms. Plugin should use a background thread.
+2016-01-11 10:50:19.966 kolexia-mobile-app[12287:230180] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-11 10:50:19.968 kolexia-mobile-app[12287:230180] Multi-tasking -> Device: YES, App: YES
+2016-01-11 10:50:19.982 kolexia-mobile-app[12287:230180] Unlimited access to network resources
+2016-01-11 10:50:20.514 kolexia-mobile-app[12287:230180] [CDVTimer][splashscreen] 382.314026ms
+2016-01-11 10:50:20.524 kolexia-mobile-app[12287:230180] [CDVTimer][statusbar] 9.515047ms
+2016-01-11 10:50:20.525 kolexia-mobile-app[12287:230180] [CDVTimer][keyboard] 0.573993ms
+2016-01-11 10:50:20.525 kolexia-mobile-app[12287:230180] [CDVTimer][TotalPluginStartup] 393.310964ms
+2016-01-11 10:50:20.611 kolexia-mobile-app[12287:230180] Resetting plugins due to page load.
+2016-01-11 10:50:21.023 kolexia-mobile-app[12287:230180] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/CD82CEC3-4300-4C9B-8C35-52EA05469F7B/kolexia-mobile-app.app/www/index.html
+2016-01-11 18:38:55.834 kolexia-mobile-app[12287:230180] THREAD WARNING: ['ImagePicker'] took '15.784912' ms. Plugin should use a background thread.
+2016-01-12 11:25:55.666 kolexia-mobile-app[12287:327983] Communications error: <OS_xpc_error: <error: 0x36b4534> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x36b4734> { length = 22, contents = "Connection interrupted" }
+}>
+2016-01-12 11:26:00.674 kolexia-mobile-app[12287:327983] Connection to assetsd was interrupted or assetsd died
+2016-01-12 11:49:03.434 kolexia-mobile-app[13580:372035] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-12 11:49:03.437 kolexia-mobile-app[13580:372035] Multi-tasking -> Device: YES, App: YES
+2016-01-12 11:49:03.452 kolexia-mobile-app[13580:372035] Unlimited access to network resources
+2016-01-12 11:49:04.229 kolexia-mobile-app[13580:372035] [CDVTimer][splashscreen] 410.862982ms
+2016-01-12 11:49:04.239 kolexia-mobile-app[13580:372035] [CDVTimer][statusbar] 9.783983ms
+2016-01-12 11:49:04.240 kolexia-mobile-app[13580:372035] [CDVTimer][keyboard] 0.230968ms
+2016-01-12 11:49:04.240 kolexia-mobile-app[13580:372035] [CDVTimer][TotalPluginStartup] 421.546996ms
+2016-01-12 11:49:04.363 kolexia-mobile-app[13580:372035] Resetting plugins due to page load.
+2016-01-12 11:49:05.491 kolexia-mobile-app[13580:372035] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/29863015-EE44-4F81-A646-C7C7CA26A947/kolexia-mobile-app.app/www/index.html#/app/dash
+2016-01-12 12:50:57.736 kolexia-mobile-app[14001:403267] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-12 12:50:57.737 kolexia-mobile-app[14001:403267] Multi-tasking -> Device: YES, App: YES
+2016-01-12 12:50:57.739 kolexia-mobile-app[14001:403267] Unlimited access to network resources
+2016-01-12 12:50:57.966 kolexia-mobile-app[14001:403267] [CDVTimer][splashscreen] 175.449014ms
+2016-01-12 12:50:57.975 kolexia-mobile-app[14001:403267] [CDVTimer][statusbar] 8.777022ms
+2016-01-12 12:50:57.976 kolexia-mobile-app[14001:403267] [CDVTimer][keyboard] 0.209033ms
+2016-01-12 12:50:57.976 kolexia-mobile-app[14001:403267] [CDVTimer][TotalPluginStartup] 185.096025ms
+2016-01-12 12:50:58.042 kolexia-mobile-app[14001:403267] Resetting plugins due to page load.
+2016-01-12 12:50:58.437 kolexia-mobile-app[14001:403267] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/A2A7A1F7-3DF0-49AE-BF38-1735C1729415/kolexia-mobile-app.app/www/index.html
+2016-01-12 12:52:43.831 kolexia-mobile-app[14228:404604] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-12 12:52:43.832 kolexia-mobile-app[14228:404604] Multi-tasking -> Device: YES, App: YES
+2016-01-12 12:52:43.834 kolexia-mobile-app[14228:404604] Unlimited access to network resources
+2016-01-12 12:52:43.986 kolexia-mobile-app[14228:404604] [CDVTimer][splashscreen] 109.848022ms
+2016-01-12 12:52:43.995 kolexia-mobile-app[14228:404604] [CDVTimer][statusbar] 8.620024ms
+2016-01-12 12:52:43.996 kolexia-mobile-app[14228:404604] [CDVTimer][keyboard] 0.222981ms
+2016-01-12 12:52:43.996 kolexia-mobile-app[14228:404604] [CDVTimer][TotalPluginStartup] 119.351983ms
+2016-01-12 12:52:44.059 kolexia-mobile-app[14228:404604] Resetting plugins due to page load.
+2016-01-12 12:52:44.437 kolexia-mobile-app[14228:404604] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/88A43DF9-B61F-47B6-BC87-53E84B538B27/kolexia-mobile-app.app/www/index.html
+2016-01-12 12:53:29.785 kolexia-mobile-app[14228:404604] THREAD WARNING: ['ImagePicker'] took '71.948975' ms. Plugin should use a background thread.
+2016-01-12 12:54:58.379 kolexia-mobile-app[14456:406360] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-12 12:54:58.380 kolexia-mobile-app[14456:406360] Multi-tasking -> Device: YES, App: YES
+2016-01-12 12:54:58.382 kolexia-mobile-app[14456:406360] Unlimited access to network resources
+2016-01-12 12:54:58.502 kolexia-mobile-app[14456:406360] [CDVTimer][splashscreen] 80.293000ms
+2016-01-12 12:54:58.512 kolexia-mobile-app[14456:406360] [CDVTimer][statusbar] 9.708047ms
+2016-01-12 12:54:58.512 kolexia-mobile-app[14456:406360] [CDVTimer][keyboard] 0.251949ms
+2016-01-12 12:54:58.512 kolexia-mobile-app[14456:406360] [CDVTimer][TotalPluginStartup] 90.965986ms
+2016-01-12 12:54:58.575 kolexia-mobile-app[14456:406360] Resetting plugins due to page load.
+2016-01-12 12:54:58.954 kolexia-mobile-app[14456:406360] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/A134D57B-C164-4D08-90CD-7F670D491ABD/kolexia-mobile-app.app/www/index.html
+2016-01-12 12:55:31.028 kolexia-mobile-app[14677:407087] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-12 12:55:31.029 kolexia-mobile-app[14677:407087] Multi-tasking -> Device: YES, App: YES
+2016-01-12 12:55:31.031 kolexia-mobile-app[14677:407087] Unlimited access to network resources
+2016-01-12 12:55:31.149 kolexia-mobile-app[14677:407087] [CDVTimer][splashscreen] 77.555001ms
+2016-01-12 12:55:31.158 kolexia-mobile-app[14677:407087] [CDVTimer][statusbar] 8.710980ms
+2016-01-12 12:55:31.159 kolexia-mobile-app[14677:407087] [CDVTimer][keyboard] 0.222981ms
+2016-01-12 12:55:31.159 kolexia-mobile-app[14677:407087] [CDVTimer][TotalPluginStartup] 87.177992ms
+2016-01-12 12:55:31.221 kolexia-mobile-app[14677:407087] Resetting plugins due to page load.
+2016-01-12 12:55:31.591 kolexia-mobile-app[14677:407087] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/A8D6B5F5-162C-42BC-B0C5-CD4CDFC6C564/kolexia-mobile-app.app/www/index.html
+2016-01-12 12:56:52.429 kolexia-mobile-app[14895:408210] Apache Cordova native platform version 3.8.0 is starting.
+2016-01-12 12:56:52.430 kolexia-mobile-app[14895:408210] Multi-tasking -> Device: YES, App: YES
+2016-01-12 12:56:52.432 kolexia-mobile-app[14895:408210] Unlimited access to network resources
+2016-01-12 12:56:52.549 kolexia-mobile-app[14895:408210] [CDVTimer][splashscreen] 77.277005ms
+2016-01-12 12:56:52.559 kolexia-mobile-app[14895:408210] [CDVTimer][statusbar] 9.414017ms
+2016-01-12 12:56:52.559 kolexia-mobile-app[14895:408210] [CDVTimer][keyboard] 0.220001ms
+2016-01-12 12:56:52.559 kolexia-mobile-app[14895:408210] [CDVTimer][TotalPluginStartup] 87.565958ms
+2016-01-12 12:56:52.619 kolexia-mobile-app[14895:408210] Resetting plugins due to page load.
+2016-01-12 12:56:52.981 kolexia-mobile-app[14895:408210] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/E8DD8528-17EA-4194-8AC4-1F5723A3C0BB/kolexia-mobile-app.app/www/index.html
+2016-01-12 21:09:58.633 kolexia-mobile-app[14895:408210] THREAD WARNING: ['Keyboard'] took '23.910889' ms. Plugin should use a background thread.

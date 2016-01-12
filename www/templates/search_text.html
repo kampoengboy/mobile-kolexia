@@ -1,0 +1,13 @@
+<ion-view view-title="Text Search">
+  <ion-content class="padding">
+    <form ng-submit="search(data)">
+    <input type="text" placeholder="Keywords e.g. Blackberry, Bonia, Watch" ng-model="data.keyword" style="width:100%; border-bottom:1px solid black;"/>
+    <br>
+    <input type="text" placeholder="Location Site e.g. Tokopedia, Bukalapak" ng-model="data.site" style="width:100%; border-bottom:1px solid black;"/>
+    <br>
+    <input type="text" placeholder="Preferred Location [Optional] e.g. Jakarta, Bandung" ng-model="data.location" style="width:100%; border-bottom:1px solid black;"/>
+    <br>
+    <button type="submit" class="button button-full button-assertive">Search</button>
+    </form>
+  </ion-content>
+</ion-view>
