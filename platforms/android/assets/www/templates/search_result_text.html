@@ -2,6 +2,9 @@
   <ion-content class="padding">
     Search Results for :
     <h4>{{q}}</h4>
+    <div style="margin-top:30px" ng-if="loadingData">
+      <ion-spinner style="margin-left:46%"></ion-spinner>
+    </div>
         <div class="card-2" ng-repeat="item in list">
           <div class="card" ng-click="openbrowser(item.r_link)">
             <div class="row card-outer">

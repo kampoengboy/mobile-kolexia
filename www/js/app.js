@@ -59,10 +59,37 @@ angular.module('starter', ['ionic','ngCordova'])
       }
     }
   })
+  .state('app.search_image/:image', {
+    url: 'app/search_image/:image',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/search_image.html',
+        controller: 'SearchImageCtrl'
+      }
+    }
+  })
   .state('app.search_result_text/:q', {
     url: 'app/search_result_text/:q',
     views: {
       'tab-dash': {
+        templateUrl: 'templates/search_result_text.html',
+        controller: 'SearchResultTextCtrl'
+      }
+    }
+  })
+  .state('app.search_result_text_discover/:q', {
+    url: 'app/search_result_text_discover/:q',
+    views: {
+      'tab-discover': {
+        templateUrl: 'templates/search_result_text.html',
+        controller: 'SearchResultTextCtrl'
+      }
+    }
+  })
+  .state('app.search_result_text_profile/:q', {
+    url: 'app/search_result_text_profile/:q',
+    views: {
+      'tab-account': {
         templateUrl: 'templates/search_result_text.html',
         controller: 'SearchResultTextCtrl'
       }

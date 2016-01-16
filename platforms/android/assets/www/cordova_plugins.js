@@ -1,14 +1,6 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
 module.exports = [
     {
-        "file": "plugins/com.synconset.imagepicker/www/imagepicker.js",
-        "id": "com.synconset.imagepicker.ImagePicker",
-        "pluginId": "com.synconset.imagepicker",
-        "clobbers": [
-            "plugins.imagePicker"
-        ]
-    },
-    {
         "file": "plugins/cordova-plugin-camera/www/CameraConstants.js",
         "id": "cordova-plugin-camera.Camera",
         "pluginId": "cordova-plugin-camera",
@@ -87,12 +79,40 @@ module.exports = [
             "cordova.InAppBrowser.open",
             "window.open"
         ]
+    },
+    {
+        "file": "plugins/com.synconset.imagepicker/www/imagepicker.js",
+        "id": "com.synconset.imagepicker.ImagePicker",
+        "pluginId": "com.synconset.imagepicker",
+        "clobbers": [
+            "plugins.imagePicker"
+        ]
+    },
+    {
+        "file": "plugins/com-badrit-base64/www/Base64.js",
+        "id": "com-badrit-base64.Base64",
+        "pluginId": "com-badrit-base64",
+        "clobbers": [
+            "navigator.Base64"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
+        "id": "cordova-plugin-x-toast.Toast",
+        "pluginId": "cordova-plugin-x-toast",
+        "clobbers": [
+            "window.plugins.toast"
+        ]
+    },
+    {
+        "file": "plugins/cordova-plugin-x-toast/test/tests.js",
+        "id": "cordova-plugin-x-toast.tests",
+        "pluginId": "cordova-plugin-x-toast"
     }
 ];
 module.exports.metadata = 
 // TOP OF METADATA
 {
-    "com.synconset.imagepicker": "1.0.7",
     "cordova-plugin-camera": "1.2.0",
     "cordova-plugin-console": "1.0.2",
     "cordova-plugin-device": "1.1.0",
@@ -100,7 +120,10 @@ module.exports.metadata =
     "cordova-plugin-statusbar": "2.0.0",
     "cordova-plugin-whitelist": "1.2.0",
     "ionic-plugin-keyboard": "1.0.8",
-    "cordova-plugin-inappbrowser": "1.1.1"
+    "cordova-plugin-inappbrowser": "1.1.1",
+    "com.synconset.imagepicker": "1.0.7",
+    "com-badrit-base64": "0.2.0",
+    "cordova-plugin-x-toast": "2.3.1"
 }
 // BOTTOM OF METADATA
 });

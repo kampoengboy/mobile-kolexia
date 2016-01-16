@@ -1,38 +1,184 @@
 angular.module('starter')
-
-.controller('DashCtrl', function($scope,$cordovaImagePicker,$cordovaCamera) {
+.controller('DashCtrl', function($scope,$cordovaToast,$ionicPopup,$ionicLoading,$http,$q,$ionicModal,$state,$cordovaImagePicker,$cordovaCamera) {
+  var image = "";
+  $scope.loadingData = true;
+  $scope.loadingData2 = false;
+  //modal
+  $ionicModal.fromTemplateUrl('templates/modal_search.html', {
+    scope: $scope,
+    hardwareBackButtonClose: false
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  //end-modal
   var options = {
    maximumImagesCount: 1,
-   width: 800,
-   height: 800,
+   width:800,
+   height:800,
    quality: 80
   };
   $scope.getpicture = function(){
+    //$state.go('app.search_image');
     $cordovaImagePicker.getPictures(options)
       .then(function (results) {
-        for (var i = 0; i < results.length; i++) {
-          alert('Image URI: ' + results[i]);
-        }
+        window.plugins.Base64.encodeFile(results[0], function(base64){
+            var image = base64;
+            $scope.image = image;
+            var canceller = $q.defer();
+            $scope.cancel = function(){
+                canceller.resolve("user cancelled");
+                $scope.modal.hide();
+            };
+            $scope.modal.show();
+            var obj = {
+              image : image
+            }
+            $http.post('https://www.kolexia.com/api/v1/search_image', obj, { timeout: canceller.promise })
+            .success(function(datas){
+                if(datas.code!=200){
+                    // again();
+                } else {
+                  $scope.loadingData= false;
+                  $scope.loadingData2 = true;
+                  var config = {
+                    headers:  {
+                          "X-Mashape-Key" : "9L4Z8XyKhOmshCsCTAaOpbhKWNY1p1uBqvyjsnJQv74uIMHP9U",
+                          'Accept': 'application/json'
+                      },
+                      timeout: canceller.promise
+                  };
+                  var url = 'https://camfind.p.mashape.com/image_responses/'+datas.result;
+                  var again = function(){
+                    $http.get(url,config)
+                      .success(function(resp) {
+                        var name = resp.name;
+                        if(typeof name=="undefined" || name=="undefined")
+                        {
+                            alert(JSON.stringify(resp));
+                            again();
+                            return;
+                        } else {
+                          $scope.modal.hide();
+                          $scope.loadingData= true;
+                          $scope.loadingData2 = false;
+                          $state.go('app.search_result_text/:q',{q: name});
+                        }
+                      })
+                  }
+                  $http.get(url,config)
+                    .success(function(resp) {
+                      var name = resp.name;
+                      if(typeof name=="undefined" || name=="undefined")
+                      {
+                          alert(JSON.stringify(resp));
+                          again();
+                          return;
+                      }
+                      else {
+                        $scope.modal.hide();
+                        $scope.loadingData= true;
+                        $scope.loadingData2 = false;
+                        $state.go('app.search_result_text/:q',{q: name});
+                      }
+                    })
+                }
+            })
+            .error(function(err){
+              $scope.modal.hide();
+              $scope.loadingData= true;
+              $scope.loadingData2 = false;
+              var alertPopup = $ionicPopup.alert({
+                  title : 'Warning',
+                  template : 'Sorry, there is a problem in your network connection.'
+              })
+            })
+        });
       }, function(error) {
         // error getting photos
     });
   }
   $scope.getcamera = function(){
     var options = {
-      quality: 50,
+      quality: 80,
       destinationType: Camera.DestinationType.DATA_URL,
       sourceType: Camera.PictureSourceType.CAMERA,
-      allowEdit: true,
+      allowEdit: false,
+      targetWidth :800,
+      targetHeight :800,
       encodingType: Camera.EncodingType.JPEG,
-      targetWidth: 100,
-      targetHeight: 100,
       popoverOptions: CameraPopoverOptions,
       saveToPhotoAlbum: false,
       correctOrientation:true
     };
 
     $cordovaCamera.getPicture(options).then(function(imageData) {
-        alert(imageData);
+      var image = 'data:image/jpeg;base64,'+imageData;
+      $scope.image = image;
+      var canceller = $q.defer();
+      $scope.cancel = function(){
+          canceller.resolve("user cancelled");
+          $scope.modal.hide();
+      };
+      $scope.modal.show();
+      var obj = {
+        image : image
+      }
+      $http.post('https://www.kolexia.com/api/v1/search_image', obj, { timeout: canceller.promise })
+      .success(function(datas){
+          if(datas.code!=200){
+              // again();
+          } else {
+            $scope.loadingData= false;
+            $scope.loadingData2 = true;
+            var config = {
+              headers:  {
+                    "X-Mashape-Key" : "9L4Z8XyKhOmshCsCTAaOpbhKWNY1p1uBqvyjsnJQv74uIMHP9U",
+                    'Accept': 'application/json'
+                },
+                timeout: canceller.promise
+            };
+            var url = 'https://camfind.p.mashape.com/image_responses/'+datas.result;
+            var again = function(){
+              $http.get(url,config)
+                .success(function(resp) {
+                  var name = resp.name;
+                  if(typeof name=="undefined" || name=="undefined")
+                  {
+                      again();
+                      return;
+                  } else {
+                    $scope.modal.hide();
+                    $scope.loadingData= true;
+                    $scope.loadingData2 = false;
+                    $state.go('app.search_result_text/:q',{q: name});
+                  }
+                })
+            }
+            $http.get(url,config)
+            .success(function(resp) {
+              var name = resp.name;
+              if(typeof name=="undefined" || name=="undefined")
+              {
+                  again();
+                  return;
+              } else {
+                $scope.modal.hide();
+                $scope.loadingData= true;
+                $scope.loadingData2 = false;
+                $state.go('app.search_result_text/:q',{q: name});
+              }
+            })
+          }
+      })
+      .error(function(err){
+        $scope.modal.hide();
+        $scope.loadingData= true;
+        $scope.loadingData2 = false;
+        var alertPopup = $ionicPopup.alert({
+            title : 'Warning',
+            template : 'Sorry, there is a problem in your network connection.'
+        })
+      })
     }, function(err) {
       // error
     });
@@ -70,20 +216,30 @@ angular.module('starter')
       $state.go('app.search_result_text/:q',{q: ans});
   }
 })
-.controller('SearchResultTextCtrl', function($scope,$state,$stateParams,$ionicPopup,$ionicLoading,$http){
+.controller('SearchResultTextCtrl', function($scope,$cordovaInAppBrowser,$state,$stateParams,$ionicPopup,$ionicLoading,$http){
     var q = $stateParams.q;
     $scope.q = q;
     var obj = {
       q : q
     }
+    $scope.loadingData = true;
+    $scope.openbrowser = function(l){
+      $cordovaInAppBrowser.open(l, '_blank')
+          .then(function(event) {
+            // success
+          })
+          .catch(function(event) {
+            // error
+      });
+    }
     var again = function(){
-      $http.post('http://localhost:1337/api/v1/search_text', obj)
+      $http.post('https://www.kolexia.com/api/v1/search_text', obj)
       .success(function(datas){
           $ionicLoading.hide();
-          $scope.loadingData = false;
           if(datas.code!=200){
               again();
           } else {
+            $scope.loadingData=false;
             $scope.list = datas.result[0].results;
             // if(datas.merchants.length==0){
             //   $scope.flag_no = "show";
@@ -96,17 +252,17 @@ angular.module('starter')
         $scope.loadingData = false;
         var alertPopup = $ionicPopup.alert({
             title : 'Warning',
-            template : 'Maaf, jaringan bermasalah.'
+            template : 'Sorry, there is a problem in your network connection.'
         })
       })
     }
-    $http.post('http://localhost:1337/api/v1/search_text', obj)
+    $http.post('https://www.kolexia.com/api/v1/search_text', obj)
     .success(function(datas){
         $ionicLoading.hide();
-        $scope.loadingData = false;
         if(datas.code!=200){
             again();
         } else {
+          $scope.loadingData=false;
           $scope.list = datas.result[0].results;
           // if(datas.merchants.length==0){
           //   $scope.flag_no = "show";
@@ -119,11 +275,11 @@ angular.module('starter')
       $scope.loadingData = false;
       var alertPopup = $ionicPopup.alert({
           title : 'Warning',
-          template : 'Maaf, jaringan bermasalah.'
+          template : 'Sorry, there is a problem in your network connection.'
       })
     })
 })
-.controller('DiscoverCtrl', function($scope) {
+.controller('DiscoverCtrl', function($scope,$state) {
   // With the new view caching in Ionic, Controllers are only called
   // when they are recreated or on app start, instead of every page change.
   // To listen for when this page is active (for example, to refresh data),
@@ -161,31 +317,36 @@ angular.module('starter')
 
 	$scope.cards = [
 		{
-			title: titles[Math.floor(Math.random()*titles.length)],
+			title: 'Zara Tokopedia Indonesia',
 			likes: likes[Math.floor(Math.random()*likes.length)],
 			price: prices[Math.floor(Math.random()*prices.length)],
 			comments: comments[Math.floor(Math.random()*comments.length)],
-			image: "http://lorempixel.com/480/450/technics",
+			image: "http://www.destinationcentreville.com/files/destination-centre-ville/zara_01_0.jpg",
+      keyword:'zara tokopedia indonesia',
 			user: users[Math.floor(Math.random()*users.length)]
 		},
 		{
-			title: titles[Math.floor(Math.random()*titles.length)],
+			title: 'Jam Tangan Bonia',
 			likes: likes[Math.floor(Math.random()*likes.length)],
 			price: prices[Math.floor(Math.random()*prices.length)],
 			comments: comments[Math.floor(Math.random()*comments.length)],
-			image: "http://lorempixel.com/480/450/technics",
+			image: "https://anekajammurah.files.wordpress.com/2013/12/bonia-215rb.jpg",
+      keyword:'jam tangan bonia',
 			user: users[Math.floor(Math.random()*users.length)]
 		},
 		{
-			title: titles[Math.floor(Math.random()*titles.length)],
+			title: 'Alinskiebrothers',
 			likes: likes[Math.floor(Math.random()*likes.length)],
 			price: prices[Math.floor(Math.random()*prices.length)],
 			comments: comments[Math.floor(Math.random()*comments.length)],
-			image: "http://lorempixel.com/480/450/technics",
+      keyword:'alinskiebrother',
+			image: "https://ecs7.tokopedia.net/img/cache/300/product-1/2015/10/28/5464194/5464194_110a8b9b-a4a1-4f29-b65e-22194115b6c8.jpg",
 			user: users[Math.floor(Math.random()*users.length)]
 		}
 	];
-
+  $scope.search = function(keyword){
+      $state.go('app.search_result_text_discover/:q',{q: keyword});
+  }
 	$scope.doRefresh = function() {
 		var last_index = $scope.cards.length + 1,
 				new_card = {
@@ -203,12 +364,29 @@ angular.module('starter')
 
 })
 
-.controller('ChatDetailCtrl', function($scope, $stateParams, Chats) {
+.controller('ChatDetailCtrl', function($scope, $state,$stateParams) {
   $scope.chat = Chats.get($stateParams.chatId);
 })
 
-.controller('AccountCtrl', function($scope) {
-  $scope.settings = {
-    enableFriends: true
-  };
+.controller('AccountCtrl', function($scope,$state) {
+  $scope.cards = [
+		{
+			title: 'Zara Tokopedia Indonesia',
+			image: "http://www.destinationcentreville.com/files/destination-centre-ville/zara_01_0.jpg",
+      keyword:'zara tokopedia indonesia',
+		},
+		{
+			title: 'Jam Tangan Bonia',
+			image: "https://anekajammurah.files.wordpress.com/2013/12/bonia-215rb.jpg",
+      keyword:'jam tangan bonia',
+		},
+		{
+			title: 'Alinskiebrothers',
+      keyword:'alinskiebrother',
+			image: "https://ecs7.tokopedia.net/img/cache/300/product-1/2015/10/28/5464194/5464194_110a8b9b-a4a1-4f29-b65e-22194115b6c8.jpg",
+		}
+	];
+  $scope.search = function(keyword){
+      $state.go('app.search_result_text_profile/:q',{q: keyword});
+  }
 });

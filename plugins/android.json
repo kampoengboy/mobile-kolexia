@@ -7,9 +7,6 @@
         "files": {}
     },
     "installed_plugins": {
-        "com.synconset.imagepicker": {
-            "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
-        },
         "cordova-plugin-camera": {
             "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
         },
@@ -32,6 +29,15 @@
             "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
         },
         "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
+        },
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
+        },
+        "com-badrit-base64": {
+            "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
+        },
+        "cordova-plugin-x-toast": {
             "PACKAGE_NAME": "com.ionicframework.kolexiamobileapp900437"
         }
     },

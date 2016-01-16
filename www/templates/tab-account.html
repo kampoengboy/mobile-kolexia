@@ -4,8 +4,8 @@
   </ion-nav-buttons>
   <ion-content>
     <div class="item item-avatar">
-          <img src="{{user.image}}" ui-sref="app.editprofil" style="border:solid 1px grey; max-height:100px; max-width:100px;">
-          <p style="display:block;font-size: 17px; margin-top:20px; margin-left:30px;">zhangjansen94</p>
+          <img src="img/ben.png" ui-sref="app.editprofil" style="border:solid 1px grey; max-height:100px; max-width:100px;">
+          <p style="display:block;font-size: 17px; margin-top:20px; margin-left:30px;">bobdylan</p>
           <button class="button button-full button-assertive" ui-sref="app.qrcode" style="margin-left:30px; width:90%">EDIT PROFILE</button>
     </div>
     <!--<div class="row" style="border-bottom:1px solid #D0D0D0;">
@@ -18,14 +18,8 @@
     </div>-->
     <div style="margin-top:0px;">
     <div class="row">
-        <div class="col col-33">
-          <img src="img/adam.jpg" style="width:100%; height:100%">
-        </div>
-        <div class="col col-33">
-          <img src="img/adam.jpg" style="width:100%; height:100%">
-        </div>
-        <div class="col col-33">
-          <img src="img/adam.jpg" style="width:100%; height:100%">
+        <div class="col col-33" ng-repeat="card in cards">
+          <img src="{{card.image}}" style="width:100%; height:100%" ng-click="search(card.keyword)">
         </div>
     </div>
     </div>
