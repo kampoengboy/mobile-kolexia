@@ -1,4 +1,43 @@
 angular.module('starter')
+.directive('preImg', function() {
+	return {
+		restrict: 'E',
+		transclude: true,
+		scope: {
+			ratio:'@',
+			helperClass: '@'
+		},
+		controller: function($scope) {
+			$scope.loaded = false;
+
+			this.hideSpinner = function(){
+				// Think i have to use apply because this function is not called from this controller ($scope)
+				$scope.$apply(function () {
+					$scope.loaded = true;
+				});
+			};
+		},
+		templateUrl: 'templates/misc/pre_img.html'
+	};
+})
+.directive('spinnerOnLoad', function() {
+	return {
+		restrict: 'A',
+		require: '^preImg',
+		scope: {
+			ngSrc: '@'
+		},
+		link: function(scope, element, attr, preImgController) {
+			element.on('load', function() {
+		    // Set visibility: true + remove spinner overlay
+				preImgController.hideSpinner();
+		  });
+		  // scope.$watch('ngSrc', function() {
+		  //   // Set visibility: false + inject temporary spinner overlay
+		  // });
+		}
+	};
+})
 .controller('DashCtrl', function($scope,$cordovaToast,$ionicPopup,$ionicLoading,$http,$q,$ionicModal,$state,$cordovaImagePicker,$cordovaCamera) {
   var image = "";
   $scope.loadingData = true;
@@ -204,7 +243,7 @@ angular.module('starter')
     }
     $scope.loadingDataImage = true;
     var link_google = 'https://www.google.com/images?q='+q;
-    var link = 'https://api.import.io/store/connector/_magic?_apikey=c8fae5e094bc41c48b811bc6544f848ac80cdaf78adeac488ef79c6b924272eaf5d2362b0de757aed9d71ef5c2a3368383e5625b0af25241c3eb73421518fea01846a1d0f2bdc6e7dbdcaa285da960ff&url='+link_google+'&format=JSON&js=false';
+    var link = 'https://api.import.io/store/connector/_magic?_apikey=c8fae5e094bc41c48b811bc6544f848ac80cdaf78adeac488ef79c6b924272eaf5d2362b0de757aed9d71ef5c2a3368383e5625b0af25241c3eb73421518fea01846a1d0f2bdc6e7dbdcaa285da960ff&connectorVersionGuid=1bf5b144-5496-7c11-344a-e027215e6049&url='+link_google+'&format=JSON&js=false';
     var again_image = function(){
       $http.get(link,conf)
       .success(function(datas){
@@ -226,6 +265,7 @@ angular.module('starter')
       })
       .error(function(err){
         $ionicLoading.hide();
+        $scope.loadingDataImage = false;
         //$scope.loadingData = false;
         // var alertPopup = $ionicPopup.alert({
         //     title : 'Warning',
@@ -265,6 +305,7 @@ angular.module('starter')
       })
       .error(function(err){
         $ionicLoading.hide();
+        $scope.loadingDataImage = false;
         //$scope.loadingData = false;
         // var alertPopup = $ionicPopup.alert({
         //     title : 'Warning',
@@ -331,7 +372,7 @@ angular.module('starter')
         'Content-Type':'application/json'
     }
     var link_google = 'https://www.google.com/images?q='+q;
-    var link = 'https://api.import.io/store/connector/_magic?_apikey=c8fae5e094bc41c48b811bc6544f848ac80cdaf78adeac488ef79c6b924272eaf5d2362b0de757aed9d71ef5c2a3368383e5625b0af25241c3eb73421518fea01846a1d0f2bdc6e7dbdcaa285da960ff&url='+link_google+'&format=JSON&js=false';
+    var link = 'https://api.import.io/store/connector/_magic?_apikey=c8fae5e094bc41c48b811bc6544f848ac80cdaf78adeac488ef79c6b924272eaf5d2362b0de757aed9d71ef5c2a3368383e5625b0af25241c3eb73421518fea01846a1d0f2bdc6e7dbdcaa285da960ff&connectorVersionGuid=1bf5b144-5496-7c11-344a-e027215e6049&url='+link_google+'&format=JSON&js=false';
     var again_image = function(){
        $http.get(link,conf)
       .success(function(datas){
@@ -341,6 +382,7 @@ angular.module('starter')
           } else {
               $scope.loadingDataImage = false;
               scope.data_images = [];
+              
               var data = datas.tables[0].results;
               for(var i=0;i<3;i++){
                   $scope.data_images.push(data[i].rgi_image);
@@ -349,6 +391,7 @@ angular.module('starter')
       })
       .error(function(err){
         $ionicLoading.hide();
+        $scope.loadingDataImage = false;
         //$scope.loadingData = false;
         // var alertPopup = $ionicPopup.alert({
         //     title : 'Warning',
@@ -408,7 +451,7 @@ angular.module('starter')
       })
       .error(function(err){
         $ionicLoading.hide();
-        console.log(err);
+        $scope.loadingDataImage = false;
         //$scope.loadingData = false;
         // var alertPopup = $ionicPopup.alert({
         //     title : 'Warning',
@@ -432,10 +475,7 @@ angular.module('starter')
     .error(function(err){
       $ionicLoading.hide();
       $scope.loadingData = false;
-      var alertPopup = $ionicPopup.alert({
-          title : 'Warning',
-          template : 'Sorry, there is a problem in your network connection.'
-      })
+      
     })
 })
 .controller('DiscoverCtrl', function($scope,$state) {
