@@ -118,7 +118,7 @@ angular.module('starter')
                         $scope.modal.hide();
                         $scope.loadingData= true;
                         $scope.loadingData2 = false;
-                        $state.go('app.search_result_text/:q',{q: name});
+                        $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                       }
                     })
                 }
@@ -190,7 +190,7 @@ angular.module('starter')
                     $scope.modal.hide();
                     $scope.loadingData= true;
                     $scope.loadingData2 = false;
-                    $state.go('app.search_result_text/:q',{q: name});
+                    $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                   }
                 })
             }

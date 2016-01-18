@@ -969,3 +969,49 @@
 2016-01-18 11:32:26.774 Kolexia[5312:111471] [CDVTimer][TotalPluginStartup] 652.285993ms
 2016-01-18 11:32:26.975 Kolexia[5312:111471] Resetting plugins due to page load.
 2016-01-18 11:32:27.619 Kolexia[5312:111471] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/336591DF-DA72-4B3B-A1F7-AAD535FB7454/Kolexia.app/www/index.html
+2016-01-18 14:09:56.219 Kolexia[5312:111471] THREAD WARNING: ['Keyboard'] took '18.710938' ms. Plugin should use a background thread.
+2016-01-18 14:10:06.071 Kolexia[8372:184269] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-18 14:10:06.072 Kolexia[8372:184269] Multi-tasking -> Device: YES, App: YES
+2016-01-18 14:10:06.094 Kolexia[8372:184269] Unlimited access to network resources
+2016-01-18 14:10:06.628 Kolexia[8372:184269] [CDVTimer][splashscreen] 335.635960ms
+2016-01-18 14:10:06.638 Kolexia[8372:184269] [CDVTimer][statusbar] 9.775996ms
+2016-01-18 14:10:06.638 Kolexia[8372:184269] [CDVTimer][keyboard] 0.612020ms
+2016-01-18 14:10:06.639 Kolexia[8372:184269] [CDVTimer][TotalPluginStartup] 346.792042ms
+2016-01-18 14:10:06.774 Kolexia[8372:184269] Resetting plugins due to page load.
+2016-01-18 14:10:07.297 Kolexia[8372:184269] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/EFB36D60-B918-4C70-A96A-5E2DB0BD84CC/Kolexia.app/www/index.html
+2016-01-18 14:10:56.023 Kolexia[8454:185436] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-18 14:10:56.024 Kolexia[8454:185436] Multi-tasking -> Device: YES, App: YES
+2016-01-18 14:10:56.026 Kolexia[8454:185436] Unlimited access to network resources
+2016-01-18 14:10:56.225 Kolexia[8454:185436] [CDVTimer][splashscreen] 144.232035ms
+2016-01-18 14:10:56.233 Kolexia[8454:185436] [CDVTimer][statusbar] 7.839978ms
+2016-01-18 14:10:56.233 Kolexia[8454:185436] [CDVTimer][keyboard] 0.185013ms
+2016-01-18 14:10:56.233 Kolexia[8454:185436] [CDVTimer][TotalPluginStartup] 153.047025ms
+2016-01-18 14:10:56.306 Kolexia[8454:185436] Resetting plugins due to page load.
+2016-01-18 14:10:56.636 Kolexia[8454:185436] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/D685329F-0446-45B5-804A-226DA1C85287/Kolexia.app/www/index.html
+2016-01-18 14:33:29.261 Kolexia[8747:194945] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-18 14:33:29.262 Kolexia[8747:194945] Multi-tasking -> Device: YES, App: YES
+2016-01-18 14:33:29.264 Kolexia[8747:194945] Unlimited access to network resources
+2016-01-18 14:33:29.621 Kolexia[8747:194945] [CDVTimer][splashscreen] 286.957026ms
+2016-01-18 14:33:29.630 Kolexia[8747:194945] [CDVTimer][statusbar] 8.379042ms
+2016-01-18 14:33:29.631 Kolexia[8747:194945] [CDVTimer][keyboard] 0.235975ms
+2016-01-18 14:33:29.631 Kolexia[8747:194945] [CDVTimer][TotalPluginStartup] 296.481967ms
+2016-01-18 14:33:29.710 Kolexia[8747:194945] Resetting plugins due to page load.
+2016-01-18 14:33:30.031 Kolexia[8747:194945] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/BD51B58B-3798-47E7-AB9A-1D8B8F62D127/Kolexia.app/www/index.html
+2016-01-18 15:33:07.727 Kolexia[11544:242081] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-18 15:33:07.730 Kolexia[11544:242081] Multi-tasking -> Device: YES, App: YES
+2016-01-18 15:33:07.758 Kolexia[11544:242081] Unlimited access to network resources
+2016-01-18 15:33:08.891 Kolexia[11544:242081] [CDVTimer][splashscreen] 598.661959ms
+2016-01-18 15:33:08.901 Kolexia[11544:242081] [CDVTimer][statusbar] 10.171950ms
+2016-01-18 15:33:08.902 Kolexia[11544:242081] [CDVTimer][keyboard] 0.503004ms
+2016-01-18 15:33:08.902 Kolexia[11544:242081] [CDVTimer][TotalPluginStartup] 610.157013ms
+2016-01-18 15:33:09.064 Kolexia[11544:242081] Resetting plugins due to page load.
+2016-01-18 15:33:09.645 Kolexia[11544:242081] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/287256B0-869E-42F7-9537-BADD7EAC4746/Kolexia.app/www/index.html
+2016-01-18 15:36:39.430 Kolexia[11726:245048] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-18 15:36:39.431 Kolexia[11726:245048] Multi-tasking -> Device: YES, App: YES
+2016-01-18 15:36:39.433 Kolexia[11726:245048] Unlimited access to network resources
+2016-01-18 15:36:39.832 Kolexia[11726:245048] [CDVTimer][splashscreen] 327.679992ms
+2016-01-18 15:36:39.841 Kolexia[11726:245048] [CDVTimer][statusbar] 8.495033ms
+2016-01-18 15:36:39.841 Kolexia[11726:245048] [CDVTimer][keyboard] 0.236988ms
+2016-01-18 15:36:39.841 Kolexia[11726:245048] [CDVTimer][TotalPluginStartup] 337.233007ms
+2016-01-18 15:36:39.936 Kolexia[11726:245048] Resetting plugins due to page load.
+2016-01-18 15:36:40.301 Kolexia[11726:245048] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/A65C4A33-4900-4572-ABD3-C4EEAB0386D1/Kolexia.app/www/index.html

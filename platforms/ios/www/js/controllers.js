@@ -38,6 +38,9 @@ angular.module('starter')
 		}
 	};
 })
+.controller('IntroCtrl', function($scope,$state){
+    
+})
 .controller('DashCtrl', function($scope,$cordovaToast,$ionicPopup,$ionicLoading,$http,$q,$ionicModal,$state,$cordovaImagePicker,$cordovaCamera) {
   var image = "";
   $scope.loadingData = true;

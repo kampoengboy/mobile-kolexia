@@ -1,4 +1,46 @@
 angular.module('starter')
+.directive('preImg', function() {
+	return {
+		restrict: 'E',
+		transclude: true,
+		scope: {
+			ratio:'@',
+			helperClass: '@'
+		},
+		controller: function($scope) {
+			$scope.loaded = false;
+
+			this.hideSpinner = function(){
+				// Think i have to use apply because this function is not called from this controller ($scope)
+				$scope.$apply(function () {
+					$scope.loaded = true;
+				});
+			};
+		},
+		templateUrl: 'templates/misc/pre_img.html'
+	};
+})
+.directive('spinnerOnLoad', function() {
+	return {
+		restrict: 'A',
+		require: '^preImg',
+		scope: {
+			ngSrc: '@'
+		},
+		link: function(scope, element, attr, preImgController) {
+			element.on('load', function() {
+		    // Set visibility: true + remove spinner overlay
+				preImgController.hideSpinner();
+		  });
+		  // scope.$watch('ngSrc', function() {
+		  //   // Set visibility: false + inject temporary spinner overlay
+		  // });
+		}
+	};
+})
+.controller('IntroCtrl', function($scope,$state){
+    
+})
 .controller('DashCtrl', function($scope,$cordovaToast,$ionicPopup,$ionicLoading,$http,$q,$ionicModal,$state,$cordovaImagePicker,$cordovaCamera) {
   var image = "";
   $scope.loadingData = true;
@@ -76,7 +118,7 @@ angular.module('starter')
                         $scope.modal.hide();
                         $scope.loadingData= true;
                         $scope.loadingData2 = false;
-                        $state.go('app.search_result_text/:q',{q: name});
+                        $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                       }
                     })
                 }
@@ -148,7 +190,7 @@ angular.module('starter')
                     $scope.modal.hide();
                     $scope.loadingData= true;
                     $scope.loadingData2 = false;
-                    $state.go('app.search_result_text/:q',{q: name});
+                    $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                   }
                 })
             }
