@@ -68,8 +68,8 @@ angular.module('starter', ['ionic','ngCordova'])
       }
     }
   })
-  .state('app.search_result_text/:q', {
-    url: 'app/search_result_text/:q',
+  .state('app.search_result_text/:q/:image', {
+    url: 'app/search_result_text/:q/:image',
     views: {
       'tab-dash': {
         templateUrl: 'templates/search_result_text.html',
@@ -77,8 +77,35 @@ angular.module('starter', ['ionic','ngCordova'])
       }
     }
   })
-  .state('app.search_result_text_discover/:q', {
-    url: 'app/search_result_text_discover/:q',
+  .state('app.related_images/:q', {
+    url: 'app/related_images/:q',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/related_images.html',
+        controller: 'RelatedImagesCtrl'
+      }
+    }
+  })
+  .state('app.related_images_discover/:q', {
+    url: 'app/related_images_discover/:q',
+    views: {
+      'tab-discover': {
+        templateUrl: 'templates/related_images.html',
+        controller: 'RelatedImagesCtrl'
+      }
+    }
+  })
+  .state('app.related_images_profile/:q', {
+    url: 'app/related_images_profile/:q',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/related_images.html',
+        controller: 'RelatedImagesCtrl'
+      }
+    }
+  })
+  .state('app.search_result_text_discover/:q/:image', {
+    url: 'app/search_result_text_discover/:q/:image',
     views: {
       'tab-discover': {
         templateUrl: 'templates/search_result_text.html',
@@ -86,8 +113,35 @@ angular.module('starter', ['ionic','ngCordova'])
       }
     }
   })
-  .state('app.search_result_text_profile/:q', {
-    url: 'app/search_result_text_profile/:q',
+  .state('app.see_images_discover/:link/:link2', {
+    url: 'app/see_images_discover/:link/:link2',
+    views: {
+      'tab-discover': {
+        templateUrl: 'templates/see_images.html',
+        controller: 'SeeImagesCtrl'
+      }
+    }
+  })
+  .state('app.see_images_profile/:link/:link2', {
+    url: 'app/see_images_profile/:link/:link2',
+    views: {
+      'tab-account': {
+        templateUrl: 'templates/see_images.html',
+        controller: 'SeeImagesCtrl'
+      }
+    }
+  })
+  .state('app.see_images/:link/:link2', {
+    url: 'app/see_images/:link/:link2',
+    views: {
+      'tab-dash': {
+        templateUrl: 'templates/see_images.html',
+        controller: 'SeeImagesCtrl'
+      }
+    }
+  })
+  .state('app.search_result_text_profile/:q/:image', {
+    url: 'app/search_result_text_profile/:q/:image',
     views: {
       'tab-account': {
         templateUrl: 'templates/search_result_text.html',

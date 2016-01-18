@@ -951,3 +951,12 @@
 2016-01-15 23:54:42.956 Kolexia[1926:27956] void SendDelegateMessage(NSInvocation *): delegate (webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:) failed to return after waiting 10 seconds. main run loop mode: kCFRunLoopDefaultMode
 2016-01-15 23:55:03.540 Kolexia[1926:27930] THREAD WARNING: ['InAppBrowser'] took '26.692871' ms. Plugin should use a background thread.
 2016-01-16 10:11:49.089 Kolexia[1926:43969] Connection to assetsd was interrupted or assetsd died
+2016-01-16 17:31:11.987 Kolexia[3837:297163] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-16 17:31:11.991 Kolexia[3837:297163] Multi-tasking -> Device: YES, App: YES
+2016-01-16 17:31:12.020 Kolexia[3837:297163] Unlimited access to network resources
+2016-01-16 17:31:13.134 Kolexia[3837:297163] [CDVTimer][splashscreen] 626.663983ms
+2016-01-16 17:31:13.147 Kolexia[3837:297163] [CDVTimer][statusbar] 12.259960ms
+2016-01-16 17:31:13.147 Kolexia[3837:297163] [CDVTimer][keyboard] 0.297010ms
+2016-01-16 17:31:13.147 Kolexia[3837:297163] [CDVTimer][TotalPluginStartup] 639.993012ms
+2016-01-16 17:31:13.305 Kolexia[3837:297163] Resetting plugins due to page load.
+2016-01-16 17:31:13.830 Kolexia[3837:297163] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/897FA7DC-1CFE-4506-A4C3-61816AA86C73/Kolexia.app/www/index.html

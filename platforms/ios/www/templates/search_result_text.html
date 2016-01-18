@@ -1,7 +1,19 @@
 <ion-view view-title="Search Result">
   <ion-content class="padding">
-    Search Results for :
-    <h4>{{q}}</h4>
+    <div style="width:200px; height:200px; margin:0 auto;" ng-if="hasImage">
+      <img src="{{image}}" style="width:100%; height:100%">
+    </div>
+    <h4 style="text-align:center;">{{q}}</h4>
+    <h5 ng-click="go_related_images()">Related Images <span style="font-size:11px;">See All ></span></h5>
+    <div style="margin-top:30px" ng-if="loadingDataImage">
+      <ion-spinner style="margin-left:46%"></ion-spinner>
+    </div>
+    <a class="row" ng-click="go_related_images()" ng-if="loadingDataImage==false">
+        <div class="col col-33" ng-repeat="card in data_images">
+          <img src="{{card}}" width="100%" height="100%">
+        </div>
+    </a>
+    <h5>Web Results</h5>
     <div style="margin-top:30px" ng-if="loadingData">
       <ion-spinner style="margin-left:46%"></ion-spinner>
     </div>
