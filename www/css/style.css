@@ -152,5 +152,12 @@ ion-spinner.spinner-on-load {
     font-size: 15px;
     font-weight: 500;
     margin: 5px 0px 0px; }
+    
+.blue-border{
+  border:1px solid #0099FF;
+}
+.gray-border{
+    border:1px solid #D8D8D8;
+}
 
 

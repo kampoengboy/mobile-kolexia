@@ -1,12 +1,15 @@
 <ion-view view-title="Text Search">
   <ion-content class="padding">
+     <div>
+        <img src="img/logo.png" style="width:100%"/>
+    </div>
     <form ng-submit="search(data)">
-    <input type="text" placeholder="Keywords e.g. zara, alinskiebrother, Bonia, Watch" ng-model="data.keyword" style="width:100%; border-bottom:1px solid black;"/>
-    <br>
-    <input type="text" placeholder="Location Site e.g. Tokopedia, Bukalapak" ng-model="data.site" style="width:100%; border-bottom:1px solid black;"/>
-    <br>
-    <input type="text" placeholder="Preferred Location [Optional] e.g. Jakarta, Bandung" ng-model="data.location" style="width:100%; border-bottom:1px solid black;"/>
-    <br>
+    <div class="list list-inset gray-border" id="show-border">
+    <label class="item item-input">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="text" placeholder="What's on your mind?" ng-model="data.keyword" ng-focus="focused()" ng-blur="blurred()">
+    </label>
+    </div>
     <button type="submit" class="button button-full button-assertive">Search</button>
     </form>
   </ion-content>

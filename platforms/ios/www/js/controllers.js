@@ -118,7 +118,7 @@ angular.module('starter')
                         $scope.modal.hide();
                         $scope.loadingData= true;
                         $scope.loadingData2 = false;
-                        $state.go('app.search_result_text/:q',{q: name});
+                        $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                       }
                     })
                 }
@@ -190,7 +190,7 @@ angular.module('starter')
                     $scope.modal.hide();
                     $scope.loadingData= true;
                     $scope.loadingData2 = false;
-                    $state.go('app.search_result_text/:q',{q: name});
+                    $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                   }
                 })
             }
@@ -318,32 +318,27 @@ angular.module('starter')
 })
 .controller('SearchTextCtrl', function($scope,$state,$ionicPopup){
   $scope.data = {};
+   $scope.focused = function() {
+    var txt_box = document.getElementById('show-border');
+    txt_box.className = "";
+    txt_box.className = "list list-inset blue-border";
+  }
+   $scope.blurred = function() {
+    var txt_box = document.getElementById('show-border');
+    txt_box.className = "";
+    txt_box.className = "list list-inset gray-border";
+  }
   $scope.search = function(data){
       var ans = "";
       var text = data.keyword;
       if(typeof data.keyword=="undefined"){
         var alertPopup = $ionicPopup.alert({
                title : 'Warning',
-               template : 'You must fill the keywords'
+               template : 'You must fill the input text'
            });
         return;
       } else {
           ans+=text;
-      }
-      var site = data.site;
-      if(typeof data.site=="undefined"){
-        var alertPopup = $ionicPopup.alert({
-               title : 'Warning',
-               template : 'You must fill the site you want to search.'
-           });
-        return;
-      } else {
-          ans+=" "+site;
-      }
-      var location = "";
-      if(typeof data.location!="undefined"){
-          location = data.location;
-          ans+=" "+location;
       }
       $state.go('app.search_result_text/:q/:image',{q: ans,image:""});
   }
