@@ -1056,3 +1056,52 @@
 2016-01-20 15:41:53.629 Kolexia[26595:557277] [CDVTimer][TotalPluginStartup] 538.428009ms
 2016-01-20 15:41:53.799 Kolexia[26595:557277] Resetting plugins due to page load.
 2016-01-20 15:41:54.322 Kolexia[26595:557277] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/7B8A669B-B700-4BE0-BF0D-8A9B845E4EC1/Kolexia.app/www/index.html
+2016-01-20 16:30:34.494 Kolexia[27381:574811] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-20 16:30:34.499 Kolexia[27381:574811] Multi-tasking -> Device: YES, App: YES
+2016-01-20 16:30:34.537 Kolexia[27381:574811] Unlimited access to network resources
+2016-01-20 16:30:35.623 Kolexia[27381:574811] [CDVTimer][splashscreen] 597.332954ms
+2016-01-20 16:30:35.638 Kolexia[27381:574811] [CDVTimer][statusbar] 14.756024ms
+2016-01-20 16:30:35.639 Kolexia[27381:574811] [CDVTimer][keyboard] 0.544965ms
+2016-01-20 16:30:35.639 Kolexia[27381:574811] [CDVTimer][TotalPluginStartup] 613.493979ms
+2016-01-20 16:30:35.839 Kolexia[27381:574811] Resetting plugins due to page load.
+2016-01-20 16:30:36.466 Kolexia[27381:574811] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/96AE329C-2166-4E59-83FB-1EE5A4654ACD/Kolexia.app/www/index.html
+2016-01-20 16:30:43.844 Kolexia[27381:574811] THREAD WARNING: ['ImagePicker'] took '43.284912' ms. Plugin should use a background thread.
+2016-01-20 16:41:59.581 Kolexia[27776:583354] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-20 16:41:59.584 Kolexia[27776:583354] Multi-tasking -> Device: YES, App: YES
+2016-01-20 16:41:59.627 Kolexia[27776:583354] Unlimited access to network resources
+2016-01-20 16:42:00.710 Kolexia[27776:583354] [CDVTimer][splashscreen] 548.957050ms
+2016-01-20 16:42:00.721 Kolexia[27776:583354] [CDVTimer][statusbar] 10.948002ms
+2016-01-20 16:42:00.722 Kolexia[27776:583354] [CDVTimer][keyboard] 0.716984ms
+2016-01-20 16:42:00.722 Kolexia[27776:583354] [CDVTimer][TotalPluginStartup] 561.468959ms
+2016-01-20 16:42:00.931 Kolexia[27776:583354] Resetting plugins due to page load.
+2016-01-20 16:42:01.415 Kolexia[27776:583354] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/9750566E-522B-42B6-92A9-DBFF10B41113/Kolexia.app/www/index.html
+2016-01-20 16:42:03.835 Kolexia[27776:583354] THREAD WARNING: ['ImagePicker'] took '42.676270' ms. Plugin should use a background thread.
+2016-01-20 16:43:59.706 Kolexia[27776:583500] Connection to assetsd was interrupted or assetsd died
+2016-01-20 16:44:39.920 Kolexia[27904:586279] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-20 16:44:39.921 Kolexia[27904:586279] Multi-tasking -> Device: YES, App: YES
+2016-01-20 16:44:39.958 Kolexia[27904:586279] Unlimited access to network resources
+2016-01-20 16:44:40.737 Kolexia[27904:586279] [CDVTimer][splashscreen] 501.699030ms
+2016-01-20 16:44:40.747 Kolexia[27904:586279] [CDVTimer][statusbar] 9.723961ms
+2016-01-20 16:44:40.748 Kolexia[27904:586279] [CDVTimer][keyboard] 0.243008ms
+2016-01-20 16:44:40.748 Kolexia[27904:586279] [CDVTimer][TotalPluginStartup] 512.623966ms
+2016-01-20 16:44:40.865 Kolexia[27904:586279] Resetting plugins due to page load.
+2016-01-20 16:44:41.354 Kolexia[27904:586279] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/E4F73F28-3082-4B98-91AC-F58FCED4A1A2/Kolexia.app/www/index.html
+2016-01-20 17:25:52.114 Kolexia[27904:586279] THREAD WARNING: ['Keyboard'] took '47.240967' ms. Plugin should use a background thread.
+2016-01-20 18:09:13.073 Kolexia[27904:628210] Communications error: <OS_xpc_error: <error: 0x390f534> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x390f734> { length = 22, contents = "Connection interrupted" }
+}>
+2016-01-20 18:23:51.152 Kolexia[27904:586279] THREAD WARNING: ['Keyboard'] took '18.698975' ms. Plugin should use a background thread.
+2016-01-20 18:24:09.280 Kolexia[31964:638621] Apache Cordova native platform version 3.9.2 is starting.
+2016-01-20 18:24:09.283 Kolexia[31964:638621] Multi-tasking -> Device: YES, App: YES
+2016-01-20 18:24:09.322 Kolexia[31964:638621] Unlimited access to network resources
+2016-01-20 18:24:10.148 Kolexia[31964:638621] [CDVTimer][splashscreen] 572.219968ms
+2016-01-20 18:24:10.161 Kolexia[31964:638621] [CDVTimer][statusbar] 13.001978ms
+2016-01-20 18:24:10.162 Kolexia[31964:638621] [CDVTimer][keyboard] 0.626028ms
+2016-01-20 18:24:10.162 Kolexia[31964:638621] [CDVTimer][TotalPluginStartup] 586.790979ms
+2016-01-20 18:24:10.308 Kolexia[31964:638621] Resetting plugins due to page load.
+2016-01-20 18:24:10.854 Kolexia[31964:638621] Finished load of: file:///Users/mike/Library/Developer/CoreSimulator/Devices/13A84CFA-2C0C-446E-996E-5844A6C4952A/data/Containers/Bundle/Application/394E5455-991B-41F3-AAE0-B7DBCC935380/Kolexia.app/www/index.html
+2016-01-20 18:24:51.323 Kolexia[31964:639282] Communications error: <OS_xpc_error: <error: 0x38f0534> { count = 1, contents =
+	"XPCErrorDescription" => <string: 0x38f0734> { length = 22, contents = "Connection interrupted" }
+}>
+2016-01-20 18:25:13.360 Kolexia[31964:638621] THREAD WARNING: ['ImagePicker'] took '48.705078' ms. Plugin should use a background thread.
+2016-01-20 18:25:41.537 Kolexia[31964:640361] Connection to assetsd was interrupted or assetsd died

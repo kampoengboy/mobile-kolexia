@@ -1,7 +1,7 @@
 <ion-view view-title="Related Images">
   <ion-content class="padding">
-    <div style="margin-top:30px" ng-if="loadingDataImage">
-      <ion-spinner style="margin-left:46%"></ion-spinner>
+    <div style="margin-top:30px; text-align:center;" ng-if="loadingDataImage">
+      <i class="fa fa-2x fa-spinner fa-pulse"></i>
     </div>
     <div class="row" ng-repeat="image in images" ng-if="$index % 3 === 0">
         <div class="col col-33" ng-if="$index < images.length">

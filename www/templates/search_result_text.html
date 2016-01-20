@@ -5,8 +5,8 @@
     </div>
     <h4 style="text-align:center;">{{q}}</h4>
     <h5 ng-click="go_related_images()">Related Images <span style="font-size:11px;">See All ></span></h5>
-    <div style="margin-top:30px" ng-if="loadingDataImage">
-      <ion-spinner style="margin-left:46%"></ion-spinner>
+    <div style="margin-top:30px; text-align:center;" class="ng-{{flag_loadimage}}">
+      <i class="fa fa-2x fa-spinner fa-pulse"></i>
     </div>
     <a class="row" ng-click="go_related_images()" ng-if="loadingDataImage==false">
         <div class="col col-33" ng-repeat="card in data_images">
@@ -14,19 +14,33 @@
         </div>
     </a>
     <h5>Web Results</h5>
-    <div style="margin-top:30px" ng-if="loadingData">
-      <ion-spinner style="margin-left:46%"></ion-spinner>
+    <div style="margin-top:30px;text-align:center;" class="ng-{{flag_load}}">
+      <i class="fa fa-2x fa-spinner fa-pulse"></i>
     </div>
         <div class="card-2" ng-repeat="item in list">
-          <div class="card" ng-click="openbrowser(item.r_link)">
-            <div class="row card-outer">
-              <div class="col card-content">
-                <h4 class="card-title">{{item['r_link/_text']}}</h4>
-                <div class="card-description-outer">
-                  <p class="card-description">{{item.st_description}}</p>
-                  <p class="card-description" style="font-size:9px; color:#330099">{{item.r_link}}</p>
+          <div ng-if="item.pvi_price!=undefined">
+            <div class="card" ng-click="openbrowser(item.fl_link)">
+                <div class="row card-outer">
+                <div class="col card-content">
+                    <h4 class="card-title">{{item['fl_link/_text']}} | <span ng-if="item['a_value']!=undefined">{{item['a_value']}}</span> <span ng-if="item['a_value_1']!=undefined">{{item['a_value_1']}}</span> <span ng-if="item['rhsl4a_value']!=undefined">{{item['rhsl4a_value']}}</span></h4>
+                    <div class="card-description-outer">
+                       <p class="card-description"><b style="font-size:20px; color:#009900">{{item['pvi_price/_source']}}</b> {{item['pvi_price/_currency']}}</p>
+                    </div>
                 </div>
-              </div>
+                </div>
+            </div>
+          </div>
+          <div ng-if="item.pvi_price==undefined">
+            <div class="card" ng-click="openbrowser(item.r_link)">
+                <div class="row card-outer">
+                    <div class="col card-content">
+                    <h4 class="card-title">{{item['r_link/_text']}}</h4>
+                    <div class="card-description-outer">
+                            <p class="card-description">{{item.st_description}}</p>
+                            <p class="card-description" style="font-size:9px; color:#330099">{{item.r_link}}</p>
+                    </div>
+                    </div>
+                </div>
             </div>
           </div>
         </div>

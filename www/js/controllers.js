@@ -44,7 +44,15 @@ angular.module('starter')
 .controller('DashCtrl', function($scope,$cordovaToast,$ionicPopup,$ionicLoading,$http,$q,$ionicModal,$state,$cordovaImagePicker,$cordovaCamera) {
   var image = "";
   $scope.loadingData = true;
+  $scope.flag_loadingdata = "show";
   $scope.loadingData2 = false;
+  $scope.flag_loadingdata2 = "hide";
+  $scope.text="Sending Image";
+  var canceller = $q.defer();
+  $scope.cancel = function(){
+      canceller.resolve("user cancelled");
+      $scope.modal.hide();
+  };
   //modal
   $ionicModal.fromTemplateUrl('templates/modal_search.html', {
     scope: $scope,
@@ -59,18 +67,14 @@ angular.module('starter')
    height:800,
    quality: 80
   };
-  $scope.getpicture = function(){
+  $scope.getpicture = function(){  
     //$state.go('app.search_image');
     $cordovaImagePicker.getPictures(options)
       .then(function (results) {
         window.plugins.Base64.encodeFile(results[0], function(base64){
+            $scope.text="Sending Image";
             var image = base64;
             $scope.image = image;
-            var canceller = $q.defer();
-            $scope.cancel = function(){
-                canceller.resolve("user cancelled");
-                $scope.modal.hide();
-            };
             $scope.modal.show();
             var obj = {
               image : image
@@ -80,8 +84,7 @@ angular.module('starter')
                 if(datas.code!=200){
                     // again();
                 } else {
-                  $scope.loadingData= false;
-                  $scope.loadingData2 = true;
+                  $scope.text="Decrypting Image";
                   var config = {
                     headers:  {
                           "X-Mashape-Key" : "9L4Z8XyKhOmshCsCTAaOpbhKWNY1p1uBqvyjsnJQv74uIMHP9U",
@@ -100,8 +103,6 @@ angular.module('starter')
                             return;
                         } else {
                           $scope.modal.hide();
-                          $scope.loadingData= true;
-                          $scope.loadingData2 = false;
                           $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                         }
                       })
@@ -116,8 +117,6 @@ angular.module('starter')
                       }
                       else {
                         $scope.modal.hide();
-                        $scope.loadingData= true;
-                        $scope.loadingData2 = false;
                         $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                       }
                     })
@@ -125,8 +124,6 @@ angular.module('starter')
             })
             .error(function(err){
               $scope.modal.hide();
-              $scope.loadingData= true;
-              $scope.loadingData2 = false;
               var alertPopup = $ionicPopup.alert({
                   title : 'Warning',
                   template : 'Sorry, there is a problem in your network connection.'
@@ -152,13 +149,9 @@ angular.module('starter')
     };
 
     $cordovaCamera.getPicture(options).then(function(imageData) {
+      $scope.text="Sending Image";
       var image = 'data:image/jpeg;base64,'+imageData;
       $scope.image = image;
-      var canceller = $q.defer();
-      $scope.cancel = function(){
-          canceller.resolve("user cancelled");
-          $scope.modal.hide();
-      };
       $scope.modal.show();
       var obj = {
         image : image
@@ -168,8 +161,7 @@ angular.module('starter')
           if(datas.code!=200){
               // again();
           } else {
-            $scope.loadingData= false;
-            $scope.loadingData2 = true;
+            $scope.text="Decrypting Image";
             var config = {
               headers:  {
                     "X-Mashape-Key" : "9L4Z8XyKhOmshCsCTAaOpbhKWNY1p1uBqvyjsnJQv74uIMHP9U",
@@ -188,8 +180,6 @@ angular.module('starter')
                       return;
                   } else {
                     $scope.modal.hide();
-                    $scope.loadingData= true;
-                    $scope.loadingData2 = false;
                     $state.go('app.search_result_text/:q/:image',{q: name,image:image});
                   }
                 })
@@ -203,8 +193,6 @@ angular.module('starter')
                   return;
               } else {
                 $scope.modal.hide();
-                $scope.loadingData= true;
-                $scope.loadingData2 = false;
                 $state.go('app.search_result_text/:q/:image',{q: name,image:image});
               }
             })
@@ -212,8 +200,6 @@ angular.module('starter')
       })
       .error(function(err){
         $scope.modal.hide();
-        $scope.loadingData= true;
-        $scope.loadingData2 = false;
         var alertPopup = $ionicPopup.alert({
             title : 'Warning',
             template : 'Sorry, there is a problem in your network connection.'
@@ -357,6 +343,8 @@ angular.module('starter')
     }
     $scope.loadingData = true;
     $scope.loadingDataImage = true;
+    $scope.flag_loadimage = "show";
+    $scope.flag_load = "show";
     $scope.openbrowser = function(l){
       $cordovaInAppBrowser.open(l, '_blank')
           .then(function(event) {
@@ -379,8 +367,8 @@ angular.module('starter')
               again_image();
           } else {
               $scope.loadingDataImage = false;
-              scope.data_images = [];
-              
+              $scope.flag_loadimage = "hide";
+              $scope.data_images = [];
               var data = datas.tables[0].results;
               for(var i=0;i<3;i++){
                   $scope.data_images.push(data[i].rgi_image);
@@ -390,6 +378,7 @@ angular.module('starter')
       .error(function(err){
         $ionicLoading.hide();
         $scope.loadingDataImage = false;
+        $scope.flag_loadimage = "hide";
         //$scope.loadingData = false;
         // var alertPopup = $ionicPopup.alert({
         //     title : 'Warning',
@@ -417,6 +406,7 @@ angular.module('starter')
               again();
           } else {
             $scope.loadingData=false;
+            $scope.flag_load = "hide";
             $scope.list = datas.result[0].results;
             // if(datas.merchants.length==0){
             //   $scope.flag_no = "show";
@@ -427,6 +417,7 @@ angular.module('starter')
       .error(function(err){
         $ionicLoading.hide();
         $scope.loadingData = false;
+        $scope.flag_load = "hide";
         var alertPopup = $ionicPopup.alert({
             title : 'Warning',
             template : 'Sorry, there is a problem in your network connection.'
@@ -441,6 +432,7 @@ angular.module('starter')
           } else {
               $scope.data_images = [];
               $scope.loadingDataImage = false;
+              $scope.flag_loadimage = "hide";
               var data = datas.tables[0].results;
               for(var i=0;i<3;i++){
                   $scope.data_images.push(data[i].rgi_image);
@@ -450,6 +442,7 @@ angular.module('starter')
       .error(function(err){
         $ionicLoading.hide();
         $scope.loadingDataImage = false;
+        $scope.flag_loadimage = "hide";
         //$scope.loadingData = false;
         // var alertPopup = $ionicPopup.alert({
         //     title : 'Warning',
@@ -463,7 +456,19 @@ angular.module('starter')
             again();
         } else {
           $scope.loadingData=false;
-          $scope.list = datas.result[0].results;
+          $scope.flag_load = "hide";
+          if(datas.result.length==1)
+                $scope.list = datas.result[0].results;
+          else 
+          {
+              var list_item = [];
+              for(var i=0;i<datas.result.length-1;i++){
+                  for(var j=0;j<datas.result[i].results.length;j++){
+                      list_item.push(datas.result[i].results[j]);
+                  }
+              }
+              $scope.list = list_item;
+          }
           // if(datas.merchants.length==0){
           //   $scope.flag_no = "show";
           //   $scope.flag_yes = "hide";
@@ -473,7 +478,7 @@ angular.module('starter')
     .error(function(err){
       $ionicLoading.hide();
       $scope.loadingData = false;
-      
+      $scope.flag_load = "hide";
     })
 })
 .controller('DiscoverCtrl', function($scope,$state) {
