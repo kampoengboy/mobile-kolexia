@@ -2,9 +2,9 @@
   <ion-content>
     <div class="card-3" ng-repeat="card in cards">
        <div class="list card">
-        <div class="item item-avatar" style="margin-bottom:-20px;">
+        <div class="item item-avatar" style="margin-bottom:-20px; background-color:white;">
           <img src="img/adam.jpg">
-          <h2 style="margin-top:10px; margin-left:-20px;">Bob</h2>
+          <h2 style="margin-top:10px; margin-left:-20px;">{{card.title}}</h2>
         </div>
         <div class="item item-image" ng-click="search(card.keyword,card.image)">
           <pre-img ratio="_3_2" helper-class="main-image">

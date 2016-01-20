@@ -999,15 +999,6 @@
 .list .item.item-gallery img {
   width: 100%; }
 
-.item.item-divider {
-  border-top: solid 1px rgba(0, 0, 0, 0.12);
-  font-size: 14px;
-  font-weight: bold;
-  height: 48px;
-  line-height: 48px;
-  color: rgba(0, 0, 0, 0.54); }
-  .item.item-divider:first-child {
-    border: none; }
 
 .item-avatar, .item-avatar .item-content, .item-avatar-left, .item-avatar-left .item-content, .card > .item-avatar {
   padding-left: 72px; }

@@ -19,13 +19,20 @@
     <div style="margin-top:0px;">
     <div class="row" ng-repeat="card in cards" ng-if="$index % 3 === 0">
         <div class="col col-33" ng-if="$index < cards.length">
-            <img src="{{cards[$index].image}}" width="100%" height="130px" ng-click="search(cards[$index].keyword,cards[$index].image)"/>
+            <pre-img ratio="_3_4" helper-class="main-image">
+                <img ng-src="{{cards[$index].image}}" width="100%" height="130px" ng-click="search(cards[$index].keyword,cards[$index].image)" spinner-on-load>
+            </pre-img>
+            <!--<img src="{{cards[$index].image}}" width="100%" height="130px" ng-click="search(cards[$index].keyword,cards[$index].image)"/>-->
         </div>
         <div class="col col-33" ng-if="$index + 1 < cards.length">
-            <img src="{{cards[$index + 1].image}}" width="100%" height="130px" ng-click="search(cards[$index+1].keyword,cards[$index+1].image)"/>
+            <pre-img ratio="_3_4" helper-class="main-image">
+                <img ng-src="{{cards[$index+1].image}}" width="100%" height="130px" ng-click="search(cards[$index+1].keyword,cards[$index+1].image)" spinner-on-load>
+            </pre-img>
         </div>
         <div class="col col-33" ng-if="$index + 2 < cards.length">
-            <img src="{{cards[$index + 2].image}}" width="100%" height="130px" ng-click="search(cards[$index+2].keyword,cards[$index+2].image)"/>
+            <pre-img ratio="_3_4" helper-class="main-image">
+                <img ng-src="{{cards[$index+2].image}}" width="100%" height="130px" ng-click="search(cards[$index+2].keyword,cards[$index+2].image)" spinner-on-load>
+            </pre-img>
         </div>
     </div>
     </div>
