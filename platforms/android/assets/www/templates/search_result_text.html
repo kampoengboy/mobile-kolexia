@@ -5,8 +5,8 @@
     </div>
     <h4 style="text-align:center;">{{q}}</h4>
     <h5 ng-click="go_related_images()">Related Images <span style="font-size:11px;">See All ></span></h5>
-    <div style="margin-top:30px; text-align:center;" class="ng-{{flag_loadimage}}">
-      <i class="fa fa-2x fa-spinner fa-pulse"></i>
+    <div style="margin-top:30px" class="ng-{{flag_loadimage}}">
+      <ion-spinner style="margin-left:46%"></ion-spinner>
     </div>
     <a class="row" ng-click="go_related_images()" ng-if="loadingDataImage==false">
         <div class="col col-33" ng-repeat="card in data_images">
@@ -14,8 +14,8 @@
         </div>
     </a>
     <h5>Web Results</h5>
-    <div style="margin-top:30px;text-align:center;" class="ng-{{flag_load}}">
-      <i class="fa fa-2x fa-spinner fa-pulse"></i>
+    <div style="margin-top:30px" class="ng-{{flag_load}}">
+      <ion-spinner style="margin-left:46%"></ion-spinner>
     </div>
         <div class="card-2" ng-repeat="item in list">
           <div ng-if="item.pvi_price!=undefined">
